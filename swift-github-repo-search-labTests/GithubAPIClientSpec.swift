@@ -9,12 +9,15 @@
 import Quick
 import Nimble
 import OHHTTPStubs
+import Alamofire
 
 @testable import swift_github_repo_search_lab
 
 class GithubAPIClientSpec: QuickSpec {
     
     var starred = false
+    
+    let githubURL: String = "https://api.github.com"
     
     override func spec() {
         
